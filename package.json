@@ -6,9 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@badrap/bar-of-progress": "^0.2.1",
+    "@heroicons/react": "^1.0.6",
+    "@supabase/supabase-js": "^1.35.3",
+    "moralis": "^1.8.0",
     "next": "latest",
+    "next-themes": "^0.2.0",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-moralis": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "17.0.35",

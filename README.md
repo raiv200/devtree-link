@@ -1,23 +1,56 @@
-# Next.js + Tailwind CSS Example
+# Build with Linode Hackathon (Linode X Hashnode) — June 2022
+  
+  ![Linode X Hashnode Hackathon](./sponsor-logo-dark.png)
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+### Project Task
 
-## Deploy your own
+**To Build an exciting open-source app of your choice using Linode and its products during the whole of June. Publish an article on your Hashnode blog about the process of creating and launching your app for a chance to win one of the 15 cash prizes and swags!**
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+[Live Demo URL]()
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+
+![Poject Final View](./assets/project-image.PNG)
+
+### Project Overview
+
+It consits of :
+
+* Header
+* Hero Section
+* Settings Page
+* Links Page
+* Community Chat Section
+* My Profile Page
+* Footer
+
+and many more components...
+
+### Languages/Framework Used
+
+* HTML5
+* CSS3
+* Java Script
+* React.js
+* Next.js
+* Tailwind CSS
+
+### Backend Resources Used
+
+* Moralis.io (Web3 Provider)
+* Supabase.io (PostgreSQL DB)
+
+### UI Resources Used
+
+* Images - (Google Images)
+* SVG Icons - (Heroicons)
+* Fonts- (Google fonts)
+
+
+
+
+
+
+
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
