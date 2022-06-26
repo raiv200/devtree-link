@@ -8,7 +8,7 @@ const shareButtonClasses={
 const URL =
   process.env.NODE_ENV === "development"
     ? "http://localhost:3000"
-    : "https://devtree.link";
+    : "https://devtree-link-raivikas.vercel.app";
 
 
 const ShareButton = ({username}) => {

@@ -1,6 +1,6 @@
 # Build with Linode Hackathon (Linode X Hashnode) — June 2022
   
-  ![Linode X Hashnode Hackathon](./public/sponsor-logo-dark.png)
+  ![Linode X Hashnode Hackathon](./public/sponsor-logo-light.png)
 
 ### Project Task
 
@@ -9,7 +9,7 @@
 [Live Demo URL]()
 
 
-![Poject Final View](./assets/project-image.PNG)
+![Poject Final View]()
 
 ### Project Overview
 
