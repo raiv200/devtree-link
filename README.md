@@ -9,7 +9,7 @@
 [Live Demo URL](https://devtree.link)
 
 
-![Poject Final View](.public/devtree-link-front-dark.PNG)
+![Poject Final View](./public/devtree-link-front-dark.PNG)
 
 ### Project Overview
 
