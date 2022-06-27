@@ -1,11 +1,11 @@
 import React from "react";
 
 const getStartedClasses={
-    container:"flex flex-col items-center space-y-4 w-[280px] h-[390px] bg-gradient-to-t from-purple-500 to-pink-300 rounded-xl md:px-4 md:py-6",
-    container__h3:"text-lg font-ibm font-bold text-purple-600",
+    container:"flex flex-col items-center space-y-4 w-[280px] h-[350px] md:h-[390px] bg-gradient-to-t from-purple-500 to-pink-300 rounded-xl md:px-4 md:py-6",
+    container__h3:"text-lg font-ibm font-bold text-purple-600 pt-4 md:pt-0",
     container__p:"text-md font-ibm font-bold text-purple-800",
     container__div:"flex flex-col items-center space-y-2",
-    container__div__p:"text-sm font-ibm font-bold text-gray-50",
+    container__div__p:"text-sm font-ibm font-bold text-gray-50 px-4",
 
 }
 

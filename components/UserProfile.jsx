@@ -4,7 +4,7 @@ import Avatar from "./Avatar";
 import ShareButton from "./ShareButton";
 
 const userProfileClasses={
-  container:"flex items-center",
+  container:"flex items-center pt-8",
   iphone__shell:"mx-auto h-[680px] w-[350px] bg-black rounded-[60px] border-[14px] border-black relative overflow-hidden ring-4 ring-indigo-500 shadow-2xl shadow-indigo-400",
   iphone__shell__img:"absolute inset-0 h-full w-full object-cover",
   iphone__shell__box1:"absolute top-0 inset-x-0",

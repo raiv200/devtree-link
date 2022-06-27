@@ -6,13 +6,10 @@ import { supabase } from "../utils/supabaseClient";
 
 const usernameClasses = {
   container: "min-h-screen  bg-gray-100 dark:bg-gray-900 pt-8",
-  container__p:
-    " text-center mx-auto mt-40 font-ibm text-4xl font-semibold text-gray-900 dark:text-gray-100",
-  box: "flex flex-col items-center max-w-4xl space-y-6 mx-auto pt-12",
-  box__p1:
-    "text-center  font-ibm text-4xl font-semibold text-gray-900 dark:text-gray-100",
-  box__p2:
-    "cursor-pointer text-gray-800 dark:text-gray-100 text-lg font-medium font-ibm px-2 py-1 opacity-80  rounded-lg hover:text-gray-50 hover:bg-gray-800/80 dark:hover:bg-gray-50/30 transition duration-300 ease-in",
+  container__p:" text-center mx-auto mt-40 font-ibm text-4xl font-semibold text-gray-900 dark:text-gray-100",
+  box: "flex flex-col items-center w-[330px] md:w-[800px] md:max-w-4xl space-y-8 mx-auto pt-12",
+  box__p1:"text-center font-ibm text-2xl md:text-4xl font-semibold text-gray-900 dark:text-gray-100",
+  box__p2:"cursor-pointer text-gray-800 dark:text-gray-100 text-lg font-medium font-ibm px-2 py-1 opacity-80  rounded-lg hover:text-gray-50 hover:bg-gray-800/80 dark:hover:bg-gray-50/30 transition duration-300 ease-in",
 };
 
 const username = () => {

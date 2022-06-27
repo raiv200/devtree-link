@@ -18,13 +18,13 @@ const HeroSection = () => {
       <div className={heroClasses.box}>
         <p className={heroClasses.box__p}>
           <span className={heroClasses.box__p__span1}>
-            Helps you connect with
+            Helps you create your
           </span>
           <span className={heroClasses.box__p__span2}>
-            Web Developers
+            Mini Portfolio
           </span>
           <span className={heroClasses.box__p__span3}>
-            around you.
+            in Minutes.
           </span>
         </p>
         <div className={heroClasses.box__div}>

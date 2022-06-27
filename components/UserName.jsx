@@ -4,7 +4,7 @@ import { useMoralis } from "react-moralis";
 import Avatar from './Avatar';
 
 const userNameClasses= {
-    container:"flex flex-col ml-4 mt-10",
+    container:"flex flex-col mt-4 md:ml-4 md:mt-10",
     box:"flex items-center space-x-4 rounded-lg  py-2 px-8",
     box__div:"flex flex-col ",
     box__div__p1:"font-ibm font-semibold text-lg text-gray-900 dark:text-gray-100 capitalize",

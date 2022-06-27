@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AddLinksForm from "../components/AddLinksForm";
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
@@ -8,9 +8,17 @@ import { useRouter } from "next/router";
 import GetStarted from "../components/GetStarted";
 
 function Dashboard() {
-  const { user } = useMoralis();
-
+  const { user ,isAuthenticated } = useMoralis();
   const router = useRouter();
+
+  useEffect(() => {
+    if (isAuthenticated) {    
+      router.push("/dashboard"); 
+    }else{
+      router.push("/"); 
+    }
+  },[isAuthenticated]);
+      
   const moralisUserName = user
     ?.getUsername()
     ?.replace(/\s+/g, "")
@@ -50,7 +58,7 @@ function Dashboard() {
 
       console.log("Data Stored :", data);
       console.log("New User inserted");
-      router.push(`${moralisUserName}`);
+      router.push(`/${moralisUserName}`);
     } else {
       const { data } = await supabase
         .from("devusers")
@@ -67,7 +75,7 @@ function Dashboard() {
       console.log("Data Stored :", data);
       console.log("User Updated");
 
-      router.push(`${moralisUserName}`);
+      router.push(`/${moralisUserName}`);
     }
   };
 
@@ -147,7 +155,7 @@ function Dashboard() {
     <Layout>
       <>
         <Navbar />
-        <div className="flex justify-between items-center ">
+        <div className="flex flex-col-reverse md:flex-row  md:justify-between items-center mt-8 md:mt-0 ">
           <div className="flex-1">
             <AddLinksForm
               onAddUserData={addUserDataHandler}
