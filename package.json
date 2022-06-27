@@ -15,7 +15,8 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-moralis": "^1.4.0",
-    "react-web-share": "^1.1.6"
+    "react-web-share": "^1.1.6",
+    "sharp": "^0.30.7"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
