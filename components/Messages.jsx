@@ -6,7 +6,7 @@ import SendMessage from "./SendMessage";
 const messagesClasses={
   container:"pb-56 ",
   box1:"space-y-10 p-9 mr-5 ml-5 max-w-2xl lg:max-w-4xl lg:mx-auto rounded-xl shadow-2xl md bg-gradient-to-r from-indigo-400 via-purple-500 to-fuchsia-500",
-  box2:"flex justify-center",
+  box2:"relative flex justify-center",
   box3:"text-center text-gray-400 mt-5 font-ibm",
   box3__p:"text-gray-400 dark:text-gray-200 mt-5 font-ibm",
 };

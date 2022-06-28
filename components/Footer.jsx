@@ -3,10 +3,10 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 
 const footerClasses = {
-  container:"relative flex justify-between items-center px-4 sm:px-6 md:px-12 py-4 mt-12",
+  container:"relative mt-40 md:mt-0 flex flex-col md:flex-row  space-y-4 md:space-y-0 justify-between items-center px-4 py-4 pb-12 sm:px-6 md:px-12 md:py-4 md:mt-12",
   box__left: "text-center text-sm text-gray-500",
   box__left__span: "dark:text-gray-100 text-gray-900 font-bold text-lg mr-2",
-  box__middle: "absolute -top-1 left-[670px] flex space-x-4 ",
+  box__middle: "absolute -top-24 left[128px] sm:-top-20 sm:left-[165px] md:-top-1 md:left-[685px] flex space-x-4 ",
   box__right: "dark:text-gray-100 text-gray-900 font-bold text-md mr-2",
   box__right__span:"ml-2 font-semibold font-ibm text-lg tracking-tight bg-gradient-to-r from-indigo-400 via-purple-600 to-pink-500 bg-clip-text text-transparent",
 };

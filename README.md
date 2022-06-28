@@ -25,24 +25,21 @@ It consits of :
 
 and many more components...
 
-### Languages/Framework Used
+### Tech Stack Used
 
-* HTML5
-* CSS3
-* Java Script
-* React.js
-* Next.js
-* Tailwind CSS
+**This is my all-time favorite tech stack:**
 
-### Backend Resources Used
-
-* Moralis.io (Web3 Provider)
-* Supabase.io (PostgreSQL DB)
+- Next.js (Fullstack Framework for React.js).
+- React.js (Front-end UI Library).
+- Tailwind CSS (CSS Framework).
+- Moralis.io (Web3 Provider)
+- Supabase.io (For Database)
+- Linode (For Hosting the App)
 
 ### UI Resources Used
 
 * Images - (Google Images)
-* SVG Icons - (Heroicons)
+* SVG Icons - (Hero Icons by Tailwind CSS)
 * Fonts- (Google fonts)
 
 
@@ -58,7 +55,7 @@ and many more components...
 
 5.Visit My Profile Tab to see your Devtree.
 
-6.Share your Devtree profile link with others.
+6.Share your Devtree profile link with others using the Share Button.
 
 
 ### The Code

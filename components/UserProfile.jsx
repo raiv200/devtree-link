@@ -4,15 +4,15 @@ import Avatar from "./Avatar";
 import ShareButton from "./ShareButton";
 
 const userProfileClasses={
-  container:"flex items-center pt-8",
-  iphone__shell:"mx-auto h-[680px] w-[350px] bg-black rounded-[60px] border-[14px] border-black relative overflow-hidden ring-4 ring-indigo-500 shadow-2xl shadow-indigo-400",
+  container:"flex items-center pt-12  pb-24 md:pb-0 md:pt-8",
+  iphone__shell:"mx-auto h-[660px] w-[325px] md:h-[680px] md:w-[350px] bg-black rounded-[60px] border-[14px] border-black relative overflow-hidden ring-4 ring-indigo-500 shadow-2xl shadow-indigo-400",
   iphone__shell__img:"absolute inset-0 h-full w-full object-cover",
   iphone__shell__box1:"absolute top-0 inset-x-0",
   iphone__shell__box1__div:"mx-auto bg-black h-6 w-40 rounded-b-3xl",
   iphone__shell__box2:"relative",
   iphone__shell__box2__div:"mr-5 mt-2 flex justify-end space-x-1",
   iphone__shell__box2__div__svg:"h-4 w-4 text-white",
-  iphone__shell__box3:"absolute top-6 left-3 w-[300px] h-[620px]",
+  iphone__shell__box3:"absolute top-8 left-2 md:top-6 md:left-3 w-[290px] h-[610px] md:w-[300px] md:h-[620px]",
   iphone__shell__box3__div:"flex flex-col items-center mt-3 space-y-6",
   iphone__shell__box3__div__profile:"flex flex-col items-center justify-center space-y-3 ",
   iphone__shell__box3__div__profile__p:"text-2xl text-center font-bold font-ibm text-gray-100",
@@ -23,7 +23,7 @@ const UserProfile = ({ username,data }) => {
   return (
     <div className={userProfileClasses.container}>
       {/* Share Button */}
-      <div className="absolute top-4 right-4">
+      <div className="absolute top-6 right-6 md:top-6 md:right-4">
         <ShareButton username={username} />
       </div>
       {/* The iPhone shell  */}

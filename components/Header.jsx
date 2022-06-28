@@ -3,12 +3,12 @@ import ThemeChanger from "./ThemeChanger";
 import { useRouter } from "next/router";
 
 const headerClasses = {
-  container:"h-20 border-b border-gray-300  shadow-sm dark:border-gray-700 px-8",
+  container:"h-20 border-b border-gray-300  shadow-sm dark:border-gray-700 md:px-8",
   box: "container px-4 sm:px-6 py-4 flex justify-between items-center",
-  box__div1: "flex space-x-6",
+  box__div1: " flex space-x-4 md:space-x-6",
   box__div1__inner:"hidden md:flex rounded-xl justify-center items-center hover:bg-gray-200 dark:hover:bg-indigo-100 px-4 py-1 text-sm font-bold text-gray-600  hover:text-gray-800 dark:text-indigo-200  dark:hover:text-indigo-600 transition duration-300 ease-in  lg:text-lg",
   box__div2: "flex space-x-10 ",
-  box__div2__btn:"rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4 py-2 md:py-1 md:px-4 text-sm font-bold text-gray-50  hover:from-violet-500 hover:to-pink-500  md:px-5 md:py-2 md:text-lg transition duration-300 ease-in",
+  box__div2__btn:"rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 py-2 sm:py-2 sm:px-4 text-sm font-bold text-gray-50  hover:from-violet-500 hover:to-pink-500  md:px-5 md:py-2 md:text-lg transition duration-300 ease-in",
 };
 
 const Header = ({ logout, isAuthenticated, authenticate, user }) => {

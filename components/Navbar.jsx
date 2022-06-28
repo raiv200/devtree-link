@@ -4,9 +4,9 @@ import UserName from './UserName';
 import { useMoralis } from 'react-moralis';
 
 const navClasses={
-  container:"flex flex-col md:flex-row min-w-full h-40 md:h-20 items-center md:justify-between pl-2 pt-2 md:pt-1 md:pl-6 ",
-  box:" flex  items-baseline space-x-4  md:space-x-10 p-2 ",
-  box__link__p:"cursor-pointer text-gray-800 dark:text-gray-100 text-md md:text-lg font-medium font-ibm px-2 py-1 opacity-80  rounded-lg hover:text-gray-50 hover:bg-gray-800/80 dark:hover:bg-gray-50/30 transition duration-300 ease-in",
+  container:"flex flex-col md:flex-row min-w-full h-40 md:h-20 items-center md:justify-between  pt-3 pl-0 sm:pl-2 sm:pt-2 md:pt-1 md:pl-6 ",
+  box:" flex  items-baseline  space-x-1 py-2 sm:p-2 sm:space-x-6 md:space-x-10 md:p-2 ",
+  box__link__p:"cursor-pointer text-gray-800 dark:text-gray-100 text-sm sm:text-md md:text-lg font-medium font-ibm px-2 py-1 opacity-80  rounded-lg hover:text-gray-50 hover:bg-gray-800/80 dark:hover:bg-gray-50/30 transition duration-300 ease-in",
 }
 
 const Navbar = () => {

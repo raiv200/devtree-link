@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useMoralis } from "react-moralis";
 
 const sendMessageClasses={
-  form:"flex z-50 fixed bottom-16 max-w-2xl rounded-full border-4 border-indigo-400 bg-black opacity-80 w-11/12 px-6 py-4 ",
+  form:"flex z-50 absolute  -bottom-36 md:-bottom-36 max-w-2xl rounded-full border-4 border-indigo-400 bg-black opacity-80 w-11/12 px-6 py-4 ",
   form__input:" flex-grow outline-none bg-transparent text-white placeholder-gray-500",
   form__btn:"font-bold font-ibm text-md text-gray-200",
 }

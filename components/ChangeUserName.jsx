@@ -1,11 +1,12 @@
 import React from 'react';
 import { useMoralis } from "react-moralis";
 import Avatar from './Avatar';
+import toast, { Toaster } from 'react-hot-toast';
 
 const changeUserNameClasses= {
-    container:"mt-10 flex flex-col  space-y-4 ml-10",
+    container:"mt-10 flex flex-col space-y-4  md:ml-10",
     container__p:"text-xl font-semibold font-ibm text-gray-800 dark:text-gray-50",
-    box:" flex flex-col items-center justify-center space-y-10 w-[400px] h-[260px] bg-gray-900 dark:bg-gray-200 rounded-lg  py-8",
+    box:" flex flex-col items-center justify-center space-y-10 w-[330px] h-[240px] sm:w-[360px] sm:h-[240px] md:w-[400px] md:h-[260px] bg-gray-900 dark:bg-gray-200 rounded-lg  py-8",
     box__div:"flex items-center space-x-10",
     box__div__inner:"flex flex-col",
     box__div__inner__p1:"font-ibm font-semibold text-lg text-gray-50 dark:text-gray-900 capitalize",
@@ -18,6 +19,7 @@ const ChangeUserName = () => {
 
     const { setUserData, isUserUpdating, user } = useMoralis();
 
+
     const setUserName = () => {
         const username = prompt(
             `Enter the new user name:(current:${user?.getUsername()})`
@@ -25,6 +27,18 @@ const ChangeUserName = () => {
         if (!username) return;
         setUserData({
             username: username
+        });
+        
+        toast.success("Username Updated!!", {
+
+            duration: 3000,
+            style: {
+                background: 'green',
+                color: "white",
+                fontWeight: "bolder",
+                fontSize: "16px",
+                padding: "10px 20px",
+            }
         });
     };
 
@@ -54,6 +68,7 @@ const ChangeUserName = () => {
                     </button>
                 </div>
             </div>
+            <Toaster position="top-center" />
         </div>
     )
 }

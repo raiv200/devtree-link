@@ -7,19 +7,19 @@ import {
 } from "@heroicons/react/solid";
 
 const widgetCircleClasses = {
-  container:"relative flex items-center justify-center mr-20 shadow-4xl rounded-full shadow-gray-800  dark:shadow-3xl",
-  box1: "flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-50 w-[450px] h-[450px] p-3 ",
-  box1__div:"relative flex items-center justify-center rounded-full bg-gray-50 dark:bg-gray-900 w-[370px] h-[370px] p-3  animate-spin-slow ",
-  box1__div__child1: "absolute -left-4 top-56 w-20 h-20 p-4 rounded-full",
-  box1__div__child1__icon1: "h-12 rotate-12 text-pink-500",
-  box1__div__child2: "absolute  -top-[34px] w-20 h-20 p-4 rounded-full",
-  box1__div__child2__icon2: "h-12 rotate-12 text-purple-500",
-  box1__div__child3: "absolute  top-56  -right-4 w-20 h-20 p-4 rounded-full",
-  box1__div__child3__icon3: "h-12 w-12  text-violet-500",
-  box1__div__child4:"relative flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-50 w-[280px] h-[280px] p-1 ",
-  box1__div__child4__div:"flex items-center justify-center rounded-full bg-gray-50 dark:bg-gray-900 w-[190px] h-[190px] p-1 ",
-  box2: "absolute z-50 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-50 w-[90px] h-[90px] p-1 shadow-lg  shadow-gray-800 ",
-  box2__icon4: "h-12 w-12 text-amber-400",
+  container:"relative flex items-center justify-center md:mr-20 shadow-4xl rounded-full shadow-gray-800  dark:shadow-3xl",
+  box1: "flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-50 w-[350px] h-[350px] md:w-[450px] md:h-[450px] p-3 ",
+  box1__div:"relative flex items-center justify-center rounded-full bg-gray-50 dark:bg-gray-900 w-[280px] h-[280px] md:w-[370px] md:h-[370px] p-3 animate-spin-slow ",
+  box1__div__child1: "absolute -left-4 top-44 md:-left-4 md:top-56 w-20 h-20 p-4 rounded-full",
+  box1__div__child1__icon1: "h-8  md:h-12 rotate-12 text-pink-500",
+  box1__div__child2: "absolute -top-[30px] md:-top-[34px] w-20 h-20 p-4 rounded-full",
+  box1__div__child2__icon2: "h-8  md:h-12 rotate-12 text-purple-500",
+  box1__div__child3: "absolute -right-6 top-44 md:top-56  md:-right-4 w-20 h-20 p-4 rounded-full",
+  box1__div__child3__icon3: "h-8  md:h-12 w-12  text-violet-500",
+  box1__div__child4:"relative flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-50 w-[190px] h-[190px] md:w-[280px] md:h-[280px] p-1 ",
+  box1__div__child4__div:"flex items-center justify-center rounded-full bg-gray-50 dark:bg-gray-900 w-[100px] h-[100px] md:w-[190px] md:h-[190px] p-1 ",
+  box2: "absolute z-50 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-50 w-[60px] h-[60px]  md:w-[90px] md:h-[90px] p-1 shadow-lg  shadow-gray-800 ",
+  box2__icon4: "h-8 w-8 md:h-12 md:w-12 text-amber-400",
 };
 
 const WidgetCircle = () => {
