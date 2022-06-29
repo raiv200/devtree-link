@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Link from "next/link";
 import UserName from './UserName';
 import { useMoralis } from 'react-moralis';
+import { supabase } from "../utils/supabaseClient";
 
 const navClasses={
   container:"flex flex-col md:flex-row min-w-full h-40 md:h-20 items-center md:justify-between  pt-3 pl-0 sm:pl-2 sm:pt-2 md:pt-1 md:pl-6 ",
@@ -11,8 +12,30 @@ const navClasses={
 
 const Navbar = () => {
   const { user } = useMoralis();
+  const ethAdd= user?.get("ethAddress");
 
-  const username = user?.getUsername()?.replace(/\s+/g, "").toLocaleLowerCase();
+  const [results, setResults] = useState([]);
+  const [newUser, setNewUser] = useState();
+
+  useEffect(() => {
+  
+
+    const fetchUsers = async () => {
+      const { data } = await supabase
+        .from("devusers")
+        .select("*")
+        .eq("ethAddress", ethAdd);
+
+      setResults(data);
+
+      data?.map((user) => setNewUser(user.userName));
+      console.log("Data fetched :", data);
+    };
+
+    fetchUsers();
+  }, [newUser]);
+
+  // const username = user?.getUsername()?.replace(/\s+/g, "").toLocaleLowerCase();
 
   return (
     <div className={navClasses.container}>
@@ -29,7 +52,7 @@ const Navbar = () => {
             </p>
           </Link>
           
-          <Link href={`/${username}`}>
+          <Link href={`/${newUser}`}>
             <p className={navClasses.box__link__p}>
                My Profile
             </p>

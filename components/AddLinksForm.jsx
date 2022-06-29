@@ -41,8 +41,6 @@ const AddLinksForm = (props) => {
     const enteredSponsormeLink = sponsormeInputRef.current.value;
 
     const userData = {
-      userName: userName,
-      ethAddress: ethAddress,
       blogLink: enteredBlogLink,
       portfolioLink: enteredPortfolioLink,
       githubLink: enteredGithubLink,

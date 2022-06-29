@@ -1,7 +1,8 @@
-import React, { useRef } from 'react'
+import React, { useState, useEffect,useRef } from 'react'
 import { useMoralis } from 'react-moralis'
 import Avatar from './Avatar'
 import toast, { Toaster } from 'react-hot-toast'
+import { supabase } from '../utils/supabaseClient'
 
 const editProfileClasses = {
   container: ' mt-10 flex flex-col space-y-4  md:ml-10',
@@ -25,6 +26,31 @@ const EditProfile = (props) => {
   const imgUrlRef = useRef()
 
   const { user } = useMoralis()
+
+  const ethAdd = user?.get('ethAddress');
+
+  const [results, setResults] = useState([])
+  const [newUser, setNewUser] = useState();
+  const [isLoading, setIsloading] = useState(false);
+
+  useEffect(() => {
+    setIsloading(true);
+
+    const fetchUsers = async () => {
+      const { data } = await supabase
+        .from('devusers')
+        .select('*')
+        .eq('ethAddress', ethAdd)
+
+      setResults(data)
+
+      data?.map((user) => setNewUser(user.userName))
+      console.log('Data fetched :', data)
+    }
+
+    fetchUsers();
+    setIsloading(false);
+  }, [])
 
   const moralisUserName = user
     ?.getUsername()
@@ -61,7 +87,7 @@ const EditProfile = (props) => {
       <p className={editProfileClasses.container__p}>Change Image</p>
       <div className={editProfileClasses.box}>
         <div className={editProfileClasses.box__div}>
-          {<Avatar username={moralisUserName} />}
+          {<Avatar username={newUser ? newUser : ethAdd?.substring(0, 8)} />}
           <div className={editProfileClasses.box__div__inner}>
             <form className={editProfileClasses.form}>
               <div className={editProfileClasses.form__div1}>
