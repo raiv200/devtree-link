@@ -110,14 +110,7 @@ const Settings = () => {
           <ChangeUserName onChangeNewUser={newUserHandler} />
           <EditProfile onAddImageHandler={addImageHandler} />
         </div>
-        <div className="mt-12 ml-[0px] sm:ml-[55px] md:ml-10 w-[340px] md:w-full sm:max-w-sm md:max-w-3xl bg-rose-500 rounded-xl flex items-center justify-center">
-          <ExclamationCircleIcon className="w-28 h-28 ml-4 md:w-12 md:h-12 md:ml-4 text-rose-200" />
-          <p className=" px-2 py-4  text-rose-100 font-ibm text-md font-semibold">
-            Note: You can change your username once and then add all your links
-            , if you try to change your username again , the you have to add
-            your links and Image URL's again.
-          </p>
-        </div>
+        
       </>
     </Layout>
   )
